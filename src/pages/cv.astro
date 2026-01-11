@@ -1,0 +1,101 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Passionate Full Stack Developer with experience in building web applications using Java, Spring Boot, and React.
+    Skilled in database management with PostgreSQL and MySQL, and familiar with cloud deployment using AWS and Docker.
+    Eager to contribute to innovative projects and continue learning new technologies.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Associate's Degree in Software Engineering"
+      subtitle="2020 to 2023 at FPT Polytechnic, Ho Chi Minh City, Vietnam"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Software Engineer"
+      subtitle="Jan 2024 to Present at FPT Software, Ho Chi Minh City, Vietnam"
+    >
+      Developing and maintaining web applications using Java Spring Boot and React. Collaborating with cross-functional teams
+      to deliver high-quality software solutions. Participating in code reviews and agile development processes.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Junior Full Stack Developer"
+      subtitle="Sep 2023 to Dec 2023 at Lumina, Ho Chi Minh City, Vietnam"
+    >
+      Built full-stack web applications from frontend to backend. Implemented RESTful APIs using Spring Boot and
+      developed responsive UI components with React. Worked with PostgreSQL for data management.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      AWS Cloud Quest: Cloud Practitioner - Amazon Web Services
+    </li>
+    <li>
+      Oracle Database SQL Certified Associate - Oracle
+    </li>
+    <li>
+      Java SE 11 Developer - Oracle
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <div class="grid gap-4 mb-10">
+    <div>
+      <h4 class="font-bold mb-2">Programming Languages</h4>
+      <ul class="list-disc mx-6">
+        <li>Java</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold mb-2">Frameworks & Libraries</h4>
+      <ul class="list-disc mx-6">
+        <li>Spring Boot</li>
+        <li>React</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold mb-2">Databases</h4>
+      <ul class="list-disc mx-6">
+        <li>PostgreSQL</li>
+        <li>MySQL</li>
+        <li>Oracle Database</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold mb-2">Tools & Cloud</h4>
+      <ul class="list-disc mx-6">
+        <li>Docker</li>
+        <li>AWS</li>
+        <li>Git/GitHub</li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
